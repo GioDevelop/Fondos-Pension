@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FPV.API.Business\FPV.API.Business.csproj" />
+    <ProjectReference Include="..\FPV.API.Core\FPV.API.Core.csproj" />
+    <ProjectReference Include="..\FPV.API.IoCRegister\FPV.API.IoCRegister.csproj" />
+    <ProjectReference Include="..\FPV.Common\FPV.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Big.Core.EstratecMasivSMS">
+      <HintPath>..\..\..\Bigholding\Big.EstratecMasivSMS\Big.EstratecMasivSMS\Big.Core.EstratecMasivSMS\bin\Debug\netstandard2.1\Big.Core.EstratecMasivSMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Big.EstratecMasivSMS">
+      <HintPath>..\..\..\Bigholding\Big.EstratecMasivSMS\Big.EstratecMasivSMS\Big.EstratecMasivSMS\bin\Debug\Big.EstratecMasivSMS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

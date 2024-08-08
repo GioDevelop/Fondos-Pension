@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.1.4" />
+    <PackageReference Include="RestSharp" Version="108.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Big.Core.EstratecMasivSMS">
+      <HintPath>..\..\..\Bigholding\Big.EstratecMasivSMS\Big.EstratecMasivSMS\Big.Core.EstratecMasivSMS\bin\Debug\netstandard2.1\Big.Core.EstratecMasivSMS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

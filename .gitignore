@@ -1,0 +1,82 @@
+# Sistema Operativo
+####################
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de usuario de Visual Studio
+####################
+.vs/
+*.user
+*.suo
+
+# Archivos de compilación
+####################
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Archivos de paquetes NuGet
+####################
+packages/
+*.nupkg
+# Si estás usando el nuevo formato de .NET Core, excluye también estas carpetas
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+
+# Archivos de configuración de Visual Studio Code
+####################
+.vscode/
+
+# Archivos de publicación de Sitios Web
+####################
+publish/
+wwwroot/
+
+# Archivos de configuración de aplicación
+####################
+appsettings*.json
+
+# Archivos de logs y registros
+####################
+*.log
+
+# Archivos generados por IDE
+####################
+.idea/
+*.sln.iml
+
+# Archivos de configuración de Resharper
+####################
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Archivos temporales de Microsoft Azure
+####################
+.ig/
+.suo
+*.sln.docstates
+
+# Archivos generados por JetBrains Rider
+####################
+.idea/
+
+# Archivos de análisis estático
+####################
+.recommenders/
+
+# Archivos de pruebas unitarias
+####################
+TestResults/
+*.Tests.dll
+*.Tests.dll.config
+*.Tests.pdb
+
+# Archivos de lock de dotnet
+####################
+project.lock.json
+project.fragment.lock.json
+artifacts/
