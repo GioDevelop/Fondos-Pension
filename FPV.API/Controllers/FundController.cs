@@ -102,7 +102,7 @@ namespace FPV.API.Controllers
                     response.statusCode = 0;
                     response.message = new()
                     {
-                        new MessageResult("Ocurrio un error al suscribirse al fondo")
+                        new MessageResult("Ocurrio un error al eliminar el fondo")
                     };
                 }
 
@@ -120,7 +120,7 @@ namespace FPV.API.Controllers
                     statusCode = 0,
                     message = new()
                     {
-                        new MessageResult($"Ocurrio un error al suscribirse al fondo {ex.Message}")
+                        new MessageResult($"Ocurrio un error al eliminar el fondo {ex.Message}")
                     }
                 };
             }
@@ -158,8 +158,7 @@ namespace FPV.API.Controllers
                         new MessageResult("El customerId es requerido")
                     };
                 }
-
-
+                
             }
             catch (Exception ex)
             {
@@ -206,7 +205,7 @@ namespace FPV.API.Controllers
                     response.statusCode = 200;
                     response.message = new()
                     {
-                        new MessageResult($"Las transacciones se obtuvieron exitosamente ")
+                        new MessageResult($"Tus fondos se obtuvieron exitosamente ")
                     };
                 }
                 else
@@ -232,11 +231,10 @@ namespace FPV.API.Controllers
                     statusCode = 0,
                     message = new()
                     {
-                        new MessageResult($"Ocurrio un error al obtener las transacciones, Error: {ex.Message}")
+                        new MessageResult($"Ocurrio un error al obtener tus fondos, Error: {ex.Message}")
                     }
                 };
             }
-            ExceptionLogging.LogInfo("Se obtuvieron las transacciones Exitosamente ");
             return response;
         }
 
@@ -275,11 +273,10 @@ namespace FPV.API.Controllers
                     statusCode = 0,
                     message = new()
                     {
-                        new MessageResult($"Ocurrio un error al obtener las transacciones, Error: {ex.Message}")
+                        new MessageResult($"Ocurrio un error al obtener los fondos, Error: {ex.Message}")
                     }
                 };
             }
-            ExceptionLogging.LogInfo("Se obtuvieron las transacciones Exitosamente ");
             return response;
         }
 
@@ -369,11 +366,10 @@ namespace FPV.API.Controllers
                     statusCode = 0,
                     message = new()
                     {
-                        new MessageResult($"Ocurrio un error al obtener las transacciones, Error: {ex.Message}")
+                        new MessageResult($"Ocurrio un error al obtener el balance de cuenta, Error: {ex.Message}")
                     }
                 };
             }
-            ExceptionLogging.LogInfo("Se obtuvieron las transacciones Exitosamente ");
             return response;
         }
 

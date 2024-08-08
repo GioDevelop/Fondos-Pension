@@ -71,7 +71,7 @@ namespace FPV.API.Controllers
             catch (Exception ex)
             {
                 isvalid = false;
-                ExceptionLogging.LogException(new Exception($"SendSMS en VerificationCodeHistoryBl. Error: {ex.Message}"));
+                ExceptionLogging.LogException(new Exception($"SendSMS. Error: {ex.Message}"));
             }
             return isvalid;
 
