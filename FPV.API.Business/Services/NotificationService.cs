@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FPV.Common.Helper;
 
 namespace FPV.API.Business.Services
 {
@@ -38,7 +39,7 @@ namespace FPV.API.Business.Services
                 {
                 }
 
-                response.IsValid = await _mailingApi.SendMail(Email, "Auteco.Fund", parameters, "ArchivoSmtp.Auteco", "MailConfiguration.Auteco");
+                response.IsValid = await _mailingApi.SendMail(Email, AppSettingsApi.Settings.Mailing.EmailTemplateId, parameters, AppSettingsApi.Settings.Mailing.ArchivoSmtp, AppSettingsApi.Settings.Mailing.MailConfiguration);
                 if (response.IsValid)
                     response.Message = $"Se envio el codigo al correo {Email} exitosamente.";
                 else

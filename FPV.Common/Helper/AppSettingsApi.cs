@@ -29,6 +29,9 @@ namespace FPV.Common.Helper
         public string BaseApi { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public string MailConfiguration { get; set; }
+        public string ArchivoSmtp { get; set; }
+        public string EmailTemplateId { get; set; }
         public RoutesEmail RoutesEmail { get; set; }
     }
     public class Root
